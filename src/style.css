@@ -121,3 +121,6 @@ button:hover {
 .contact-contents:hover {
   color: purple;
 }
+.footer-entry {
+  text-align: center;
+}
