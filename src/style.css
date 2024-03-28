@@ -51,9 +51,14 @@ button:hover {
   color: var(--pink-buttons) !important;
 }
 .bg-video {
-  width: 100%;
   margin-top: 30px;
+  width: 100%;
 }
+.video {
+  aspect-ratio: 16/9;
+  height: 10%;
+}
+
 .code-icon {
   text-align: center;
   background: var(--blue-background);
