@@ -21,6 +21,11 @@ h2 {
   font-size: 60px;
   font-style: normal;
 }
+.poppins-med {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: var(--pink-buttons);
+}
 .btn {
   display: block;
   background: var(--pink-buttons);
@@ -54,10 +59,6 @@ button:hover {
   margin-top: 30px;
   width: 100%;
 }
-.video {
-  aspect-ratio: 16/9;
-  height: 10%;
-}
 
 .code-icon {
   text-align: center;
@@ -82,6 +83,14 @@ button:hover {
   line-height: 2;
   text-align: justify;
 }
+.picture-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 50px;
+  margin: 30px;
+  line-height: 2.5;
+}
+
 @media (max-width: 500px) {
   .media-btn {
     margin-bottom: 38px;
