@@ -85,13 +85,13 @@ button:hover {
 }
 .picture-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
   column-gap: 50px;
   margin: 30px;
-  line-height: 2.5;
 }
 .aboutme-list {
   background: var(--blue-background);
+  line-height: 2.5;
 }
 .cols {
   display: grid;
@@ -99,6 +99,8 @@ button:hover {
 }
 .intouch {
   margin-top: 150px;
+  font-family: Poppins;
+  line-height: 1.8;
 }
 
 .project-title {
@@ -146,5 +148,13 @@ button:hover {
   }
   .check {
     text-align: center;
+  }
+  .picture-grid {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .aboutme-list {
+    margin-top: 50px;
   }
 }
