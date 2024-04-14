@@ -90,27 +90,15 @@ button:hover {
   margin: 30px;
   line-height: 2.5;
 }
-
-@media (max-width: 500px) {
-  .media-btn {
-    margin-bottom: 38px;
-  }
-  .media-title {
-    font-size: small;
-  }
-  .first-project {
-    border-bottom: 1px dashed grey;
-    padding-bottom: 50px;
-  }
-  .third-project {
-    border-top: 1px dashed grey;
-    border-bottom: 1px dashed grey;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .check {
-    text-align: center;
-  }
+.aboutme-list {
+  background: var(--blue-background);
+}
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.intouch {
+  margin-top: 150px;
 }
 
 .project-title {
@@ -137,4 +125,26 @@ button:hover {
 }
 .footer-entry {
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  .media-btn {
+    margin-bottom: 38px;
+  }
+  .media-title {
+    font-size: small;
+  }
+  .first-project {
+    border-bottom: 1px dashed grey;
+    padding-bottom: 50px;
+  }
+  .third-project {
+    border-top: 1px dashed grey;
+    border-bottom: 1px dashed grey;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .check {
+    text-align: center;
+  }
 }
