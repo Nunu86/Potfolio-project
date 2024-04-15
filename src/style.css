@@ -11,6 +11,9 @@ h2 {
   text-align: center;
   margin-top: 5px;
 }
+body {
+  background-color: var(--blue-background);
+}
 
 .poppins-medium {
   display: block;
@@ -102,12 +105,17 @@ button:hover {
   font-family: Poppins;
   line-height: 1.8;
 }
-
 .project-title {
   text-align: center;
   font-family: "Poppins";
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
+  line-height: 1;
+  margin-top: 50px;
+}
+.picture,
+.essay {
+  margin-top: 50px;
 }
 .contact {
   display: flex;
@@ -128,14 +136,32 @@ button:hover {
 .footer-entry {
   text-align: center;
 }
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  margin: 50px;
+}
+.first-row,
+.third-row,
+.fifth-row {
+  background: var(--blue-background);
+}
+.second-row,
+.fourth-row {
+  background: var(--edge-pink-color);
+  border-radius: 6px;
+}
 
 @media (max-width: 500px) {
   .media-btn {
     margin-bottom: 38px;
   }
-  .media-title {
-    font-size: small;
-  }
+
   .first-project {
     border-bottom: 1px dashed grey;
     padding-bottom: 50px;
@@ -156,5 +182,14 @@ button:hover {
   }
   .aboutme-list {
     margin-top: 50px;
+  }
+  .first-row,
+  .second-row,
+  .third-row,
+  .fourth-row,
+  .fifth-row {
+    display: block;
+    background: none;
+    margin: 30px;
   }
 }
