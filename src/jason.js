@@ -1,14 +1,15 @@
-function inTouch() {
-  let selectSection = document.querySelector("#javaEnhance");
-  selectSection.animate(
+function runclick(event) {
+  event.preventDefault();
+  let check1 = document.querySelector("#javaEnhance");
+
+  check1.animate(
     [
-      {
-        transform: scale(1), style.fontSize=20, 
-      },
-      { transform: scale(0.5), fontSize: `30px` },
-      { transform: scale(1), fontSize: `30px` },
+      { transform: `scale(1) rotate(50deg)`, fontSize: 20, color: "blue" },
+      { transform: `scale(.5) rotate(-50deg)`, fontSize: 40, color: "blue" },
+      { transform: `scale(1)`, fontSize: 30, color: "blue" },
     ],
-    { duration: 100, iterations: 1, easing: linear }
+    { duration: 2000, iterations: 1 }
   );
 }
-inTouch();
+
+window.addEventListener("load", runclick);
