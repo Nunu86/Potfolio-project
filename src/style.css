@@ -135,6 +135,8 @@ button:hover {
 }
 .footer-entry {
   text-align: center;
+  margin-bottom: 30px;
+  text-decoration: underline;
 }
 .first-row,
 .second-row,
