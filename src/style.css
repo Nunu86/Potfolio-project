@@ -177,11 +177,7 @@ button:hover {
   .check {
     text-align: center;
   }
-  .picture-grid {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
+
   .aboutme-list {
     margin-top: 50px;
   }
@@ -193,5 +189,9 @@ button:hover {
     display: block;
     background: none;
     margin: 30px;
+  }
+  .picture-grid {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
